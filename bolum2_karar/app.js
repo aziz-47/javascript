@@ -73,15 +73,46 @@
 
 //Asal sayi tespiti nasil yapabilriz?
 
-const number = Number(prompt("Sayisi giriniz?"));
+// const number = Number(prompt("Sayisi giriniz?"));
 
-let asal = true;
-for (let i = 2; i < number; i++) {
-  if (number % i == 0) {
-    asal = false;
+// let asal = true;
+// for (let i = 2; i < number; i++) {
+//   if (number % i == 0) {
+//     asal = false;
+//     break;
+//   }
+// }
+
+// const asalMi = asal ? "ASAL" : "ASAL DEGIL";
+// console.log(asalMi);
+
+// let not;
+// do {
+// not = prompt("0-100 arasında bir not giriniz:");
+// } while (not < 0 || not > 100);
+// console.log("Giridiğiniz not 0-100 arasındadır");
+
+//Orenk while dongsu
+// let not;
+// not = prompt("0-100 arasında bir not giriniz:");
+// while(not<0 || not>100){
+//   console.error("Girirlen not 0-100 arasinda olamlidir.");
+//   =prompt("0-100 arasinda bir not giriniz");
+// }
+
+// console.log("Giridginiz not 0-100 ararsindadir");
+
+//ORNEK: Klavyeden Q karakteri girilene kadar not girisii yapana bir program dongu kullanarak yazinzi
+
+let not1;
+let i = 1;
+while (true) {
+  not1 = prompt(i + ".kisinin notunu giriniz: ");
+  not1 = not1.toLowerCase(); //Girieln karakteri kucuk hafrfe ceviriyoruz.
+  if (not1 == "q") {
     break;
   }
-}
+  i++;
 
-const sonuc = asal ? "ASAL" : "ASAL DEGIL";
-console.log(sonuc);
+  console.log(Number(not1));
+}
