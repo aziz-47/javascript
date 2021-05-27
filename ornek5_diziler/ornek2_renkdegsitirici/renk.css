@@ -1,0 +1,23 @@
+.container {
+  border: 2px solid #a12ef4;
+  width: 100vw; /*viewport wieht*/
+  min-height: 100vh; /*viewport height*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 1rem;
+  background-color: bisque;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(170, 104, 23);
+}
+
+h1 {
+  background-color: white;
+}
